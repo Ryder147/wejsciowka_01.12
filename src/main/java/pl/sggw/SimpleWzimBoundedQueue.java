@@ -92,6 +92,19 @@ public class SimpleWzimBoundedQueue<E> implements WzimBoundedQueue<E> {
         return tab[0];
     }
 
+    public int size(){
+        int licznik=0;
+        for (int i = 0; i < tab.length; i++) {
+            if(tab[i]!=null){
+               licznik+=1;
+            }
+        }
+        return licznik;
+    }
+    public int capacity(){
+        return max;
+    }
+
 
 
 
